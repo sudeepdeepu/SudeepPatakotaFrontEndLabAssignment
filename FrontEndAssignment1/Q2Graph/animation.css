@@ -1,0 +1,75 @@
+#bar-graph{
+    background-color: #F5F5F5;
+    position: absolute;
+    left: 40%;
+    top: 15%;
+
+}
+body{
+    height: 0;
+}
+#bar-graph article{
+    display: inline-block;
+}
+div{
+    width: 40px;
+    height: 300px;
+    margin: 20px;
+    background-color: #C9C6C0;
+}
+p{
+    padding-left: 20px;
+}
+#bar1,#bar2,#bar3{
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    animation-name: barGraph1;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+#bar1{
+    height: 70%;
+    animation-name: barGraph1;
+}
+#bar2{
+    height: 60%;
+    animation-name: barGraph2;
+}
+#bar3{
+    height: 20%;
+    animation-name: barGraph3;
+}
+h1{
+    text-align: center;
+}
+@keyframes barGraph1{
+    0%{
+        height: 100%;
+        background-color: white;
+    }
+    100%{
+        height: 70%;
+        background-color: white;
+    }
+}
+@keyframes barGraph2{
+    0%{
+        height: 100%;
+        background-color: white;
+    }
+    100%{
+        height: 60%;
+        background-color: white;
+    }
+}
+@keyframes barGraph3{
+    0%{
+        height: 100%;
+        background-color: white;
+    }
+    100%{
+        height: 20%;
+        background-color: white;
+    }
+}
